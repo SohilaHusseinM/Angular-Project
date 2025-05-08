@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="row">
+    <div class="left-side col-2 bg-primary-subtle mx-2 text-center rounded-2 d-flex justify-content-center align-items-center" style="height: 85vh;">
+    <ul class="list-unstyled d-flex flex-column ">
+    <li class="bg-success-subtle rounded-2 my-2 p-3 text-center">
+        <a class="nav-link fs-5 fw-bold text-dark" routerLinkActive="bg-primary rounded-2 text-white shadow"  routerLink="slideshow">Slide Show</a></li>
+    <li class="bg-success-subtle rounded-2 my-2 p-3 text-center">
+        <a class="nav-link fs-5 fw-bold text-dark" routerLinkActive="bg-primary rounded-2 text-white shadow"  routerLink="data-table">Table</a></li>
+    </ul>
+    </div>
+    <div class="right-side col-9 bg-secondary-subtle mx-2 text-center rounded-2" style="height: 85vh;">
+        <router-outlet></router-outlet>
+    </div>
+    </div>

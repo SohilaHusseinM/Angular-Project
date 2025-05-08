@@ -1,0 +1,38 @@
+.div1-container {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #4e89af; 
+  }
+  
+  .div1 {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px; 
+  }
+
+  
+  input[type="text"] {
+    border-radius: 10px;
+    border: 1px solid #ccc; 
+    padding: 10px;
+    width: 100%; 
+    font-size: 16px;
+  }
+  
+  input[type="button"] {
+    background-color: rgb(98, 98, 113);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }

@@ -1,0 +1,18 @@
+<div class="container">
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+    </thead>
+    <tbody>
+        @for (std of DisplayData;track $index){
+        <tr>
+            <td>{{std.name}}</td>
+            <td>{{std.age}}</td>
+        </tr>
+    }
+    </tbody>
+</table>
+</div>

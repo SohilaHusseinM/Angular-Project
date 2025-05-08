@@ -1,3 +1,48 @@
+# Angular Multi-Feature Project
+
+A collection of small Angular sub-projects demonstrating core concepts and features. Includes user authentication, product management, dynamic UI components, and more.
+
+![Project Preview](demo.gif) 
+
+## 🚀 Features
+- **User Authentication**  
+  - Login/Register forms with validation (email, password strength, age).
+  - Error handling for invalid inputs (e.g., "Email Not Valid", "Weak Password").
+- **Product Management**  
+  - Add products with name, description, image URL, and rating.
+  - Form validation for product details.
+- **Dynamic UI Components**  
+  - Slide show with navigation controls (Prev/Next, Stop).
+  - Responsive data tables (e.g., user registration table).
+- **About Page**  
+  - Mission statement and team information section.
+- **Responsive Navigation**  
+  - Top navigation bar (Home, Product, Login, Register, About).
+
+## 🔧 Core Implementation Details
+### 📦 Modules
+- Feature modules for `Auth`, `Product`, and `Shared` components.
+- Lazy-loaded modules for optimized performance.
+
+### 🧭 Routing
+- Routes for `/home`, `/products`, `/login`, `/register`, `/about`.
+- Route parameters for dynamic content (e.g., product details).
+
+### 📝 Forms
+- **Template-driven forms** for login/register.
+- **Reactive forms** for product creation.
+- Custom validators (e.g., password strength, age restrictions).
+
+### 🎨 UI & Styling
+- **Angular Material** components (forms, buttons, tables).
+- **Bootstrap** grid system for responsive layouts.
+- Custom CSS for themes and animations.
+
+## 🛠️ Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/SohilaHusseinM/Angular-Project.git
+
 # Nproject
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.8.

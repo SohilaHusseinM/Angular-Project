@@ -1,0 +1,35 @@
+.div2 {
+    margin: 0;
+    background-color: #595554;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .div2 img {
+    width:30rem;
+    border: .2rem solid #3595b8;
+    border-radius: 1.5rem;
+  }
+  
+  .div2 div {
+    display: flex;
+    gap: 15px; 
+  }
+  
+  .div2 button {
+    background-color: #ffffff; 
+    color: #3d94ff; 
+    border: 2px solid #3d94ff;
+    border-radius: 15px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+
+  

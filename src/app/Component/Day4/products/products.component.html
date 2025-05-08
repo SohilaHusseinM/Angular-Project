@@ -1,0 +1,21 @@
+<div class="container my-5">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+        @for(prd of products; track $index) {
+        <div class="col">
+            <div class="card h-100 shadow-sm">
+                <img
+                    [src]="prd.img"
+                    class="card-img-top"
+                    alt="Product Image"
+                    style="height: 300px; object-fit: cover;"
+                >
+                <div class="card-body text-center bg-dark text-light">
+                    <h5 class="card-title">{{ prd.name }}</h5>
+                    <p class="card-text">{{ prd.disc }}</p>
+                    <h6>{{ prd.rate }}/5</h6>
+                </div>
+            </div>
+        </div>
+        }
+    </div>
+</div>

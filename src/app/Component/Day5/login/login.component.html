@@ -1,0 +1,56 @@
+<div class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-md-8 col-lg-6">
+        <div class="card shadow-lg rounded-4">
+          <div class="card-header bg-brown text-dark text-center fs-4 fw-bold">
+            LogIn
+          </div>
+          <div class="card-body p-4">
+            <form [formGroup]="dataForm">
+              <!-- Email -->
+              <div class="mb-3">
+                <label for="email" class="form-label fw-semibold">Email</label>
+                <input
+                  id="email"
+                  type="email"
+                  class="form-control"
+                  placeholder="Enter Your Email"
+                  formControlName="email"
+                />
+                @if(!emailValid) {
+                  <p class="text-danger mt-1">Email Not Valid</p>
+                }
+              </div>
+
+              <!-- Password -->
+              <div class="mb-3">
+                <label for="Password" class="form-label fw-semibold">Password</label>
+                <input
+                  id="Password"
+                  type="password"
+                  class="form-control"
+                  placeholder="Enter Your Password"
+                  formControlName="password"
+                />
+                @if(!passwordValid) {
+                  <p class="text-danger mt-1">Password Not Valid</p>
+                }
+              </div>
+  
+              <!-- Submit Button -->
+              <div class="d-grid">
+                <button
+                  type="submit"
+                  class="btn bg-transparent btn-warning btn-lg fw-bold"
+                  (click)="submit()"
+                >
+                  Register
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

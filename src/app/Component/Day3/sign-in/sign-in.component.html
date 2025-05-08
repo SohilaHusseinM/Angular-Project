@@ -1,0 +1,21 @@
+<div class="container">
+<div class="form-container">
+    <h2>Registration</h2>
+    <input type="text" id="name" placeholder="Name" [(ngModel)]="name">
+    @if(name.length<3 &&name.length){
+        <p style="color:red">Name Not valid</p>
+    }
+    @else if(name.length){
+        <p style="color:green">Name valid</p>
+    }
+    <input type="text" id="age" placeholder="Age" [(ngModel)]="age">
+    @if(+age > 25 || +age <0 ||age=='0'){
+        <p style="color:red">Age Not valid</p>
+    }
+    @else if(+age > 0){
+        <p style="color:green">Age valid</p>
+
+    }
+    <input type="button" id="insert-button" value="Insert" (click)="addStd()">
+</div>
+</div>

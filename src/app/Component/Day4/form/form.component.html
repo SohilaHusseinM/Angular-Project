@@ -1,0 +1,58 @@
+<div class="container mt-5">
+    <h5 class="mb-4">Add a Product</h5>
+    <form [formGroup]="PrForm">
+        <div class="mb-3">
+            <label for="name" class="form-label">Product Name</label>
+            <input
+                id="name"
+                type="text"
+                class="form-control"
+                placeholder="Enter product name"
+                formControlName="name"
+            />
+            @if(!nameValid) {
+                <p class="text-danger mt-1">Product Name Not Valid</p>
+            }
+        </div>
+        <div class="mb-3">
+            <label for="description" class="form-label">Product Description</label>
+            <input
+                id="description"
+                type="text"
+                class="form-control"
+                placeholder="Enter product description"
+                formControlName="disc"
+            />
+            @if(!discValid) {
+                <p class="text-danger mt-1">Product Description Not Valid</p>
+            }
+        </div>
+        <div class="mb-3">
+            <label for="imageUrl" class="form-label">Product Image URL</label>
+            <input
+                id="imageUrl"
+                type="text"
+                class="form-control"
+                placeholder="Paste image URL here"
+                formControlName="img"
+            />
+            @if(!imgValid) {
+                <p class="text-danger mt-1">Product Image Not Valid</p>
+            }
+        </div>
+        <div class="mb-3">
+            <label for="rating" class="form-label">Product Rating</label>
+            <input
+                id="rating"
+                type="text"
+                class="form-control"
+                placeholder="Rate out of 5"
+                formControlName="rate"
+            />
+            @if(!rateValid) {
+                <p class="text-danger mt-1">Product Rate Not Valid</p>
+            }
+        </div>
+        <button type="submit" class="btn btn-primary" (click)="sendDtProduct()">Add Product</button>
+    </form>
+</div>

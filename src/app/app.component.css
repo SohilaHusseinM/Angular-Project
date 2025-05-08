@@ -1,0 +1,57 @@
+/*Day1
+.container {
+    margin: 0;
+    padding: 0;
+    height: 97vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    gap: 3px; 
+  }
+  
+  app-first, app-second {
+    flex: 1; 
+    max-width: 60%;
+  }*/
+  
+  /*  Day2
+  .container {
+    margin: 0;
+    padding: 0;
+    height: 97vh;
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start; 
+    align-items: center; 
+    background-color: #ffffff;
+    gap: 3px;
+}
+
+.container1, .container2 {
+    width: 100%;
+}
+ */
+  
+
+
+  
+ .bg-brown {
+  background-color: #8b5e3c; /* Rich brown for the nav bar */
+}
+
+.border-brown {
+  border-color: #5e3b28; /* Darker brown for the border */
+}
+
+.text-light {
+  color: #ffffff; /* White text for contrast */
+}
+
+.bg-light {
+  background-color: #f8f9fa !important; /* Light background for active state */
+}
+
+.text-dark {
+  color: #343a40 !important; /* Dark text for active state */
+}
